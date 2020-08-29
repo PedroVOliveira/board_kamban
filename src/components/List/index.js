@@ -17,7 +17,8 @@ export default function List({data}) {
       </header>
 
       <ul>
-        {data.cards.map(card => <Card key={card.id} data={card}/>)}
+        {/* O index é necessário para pegar a posição do item na lista */}
+        {data.cards.map((card,index) => <Card key={card.id} data={card} index={index}/>)}
       </ul>
     </Container>
   )

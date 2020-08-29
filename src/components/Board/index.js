@@ -9,10 +9,6 @@ export default function Board() {
   return (
     <Container>
       {list.map(list => <List key={list.title} data={list}/>)}
-      {/* <List />
-      <List />
-      <List />
-      <List /> */}
     </Container>
   )
 }
