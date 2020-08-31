@@ -25,6 +25,12 @@ export const Container = styled.div`
 
   }
 
+  div {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+
   img {
     width:24px;
     height:24px;

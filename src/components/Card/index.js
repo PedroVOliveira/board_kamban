@@ -62,7 +62,10 @@ export default function Card({ data,index,listIndex}) {
         {data.labels.map(label => <Label key={label} color={label} />)}
       </header>
       <p>{data.content}</p>
-      {data.user && <img src={data.user} alt="user"/>}
+      <div>
+        {data.user && <img src={data.user} alt="user"/>}
+        <p>{data.date}</p>
+      </div>
 
     </Container>
   )
