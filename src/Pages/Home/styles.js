@@ -23,6 +23,7 @@ export const Container = styled.div`
       color:#9871F5;
       margin-top:0.4rem;
     }
+
     button {
       width: 100%;
       height: 3.6rem;

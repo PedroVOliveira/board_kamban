@@ -26,7 +26,7 @@ export const InputBlock = styled.div`
 
   input {
     width:100%;
-    height:2.6rem;
+    height:3.4rem;
     margin-top:0.8rem;
     border-radius: 0.4rem;
     border:1px solid #E6E6F0;
