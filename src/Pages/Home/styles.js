@@ -29,7 +29,7 @@ export const Container = styled.div`
       height: 3.6rem;
       border:0;
       border-radius:0.4rem;
-       background:#9871F5;
+      background:#9871F5;
       cursor: pointer;
       font:700 1.6rem;
       display:flex;

@@ -6,7 +6,9 @@ import Board from '../../components/Board';
 export default function Kamban() {
   return (
     <DndProvider backend={HTML5Backend}>
-      <Header />
+      <Header label="Board Kambam">
+        <h1>HELLO</h1>
+      </Header>
       <Board />
     </DndProvider>
 

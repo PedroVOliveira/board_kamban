@@ -23,12 +23,20 @@ export const Container = styled.div`
       padding:0 10px;
     }
 
-    button {
+    button[type="submit"] {
       width:42px;
       height:42px;
       border-radius:18px;
       background:#3b5bfd;
       border:0;
+      cursor:pointer;
+    }
+
+    button[type="button"] {
+      position:absolute;
+      left:0px;
+      border:0;
+      background:transparent;
       cursor:pointer;
     }
   }

@@ -10,7 +10,7 @@ export default function List({data, index: listIndex}) {
         <h2>{data.title}</h2>
 
         {data.creatable && (
-          <button type="button">
+          <button type="submit">
             <MdAdd size={24} color="#fff" />
           </button>
         )}

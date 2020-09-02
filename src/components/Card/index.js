@@ -3,6 +3,7 @@ import React,{useRef,useContext} from 'react'
 // Hook de drag in drop use drag faz a lógica de arastar e o use drop cria a funcionalidade adicionar o card em outra lista
 import { useDrag, useDrop } from 'react-dnd';
 import { Container,Label } from './styles';
+import { MdDelete } from 'react-icons/md';
 import ContextBoard from '../Board/context';
 export default function Card({ data,index,listIndex}) {
   const ref = useRef();
@@ -58,8 +59,12 @@ export default function Card({ data,index,listIndex}) {
   return (
     // o container recebe a referencia e o comportamento.
     <Container ref={ref} isDragging={isDragging}>
+
       <header>
-        {data.labels.map(label => <Label key={label} color={label} />)}
+        {/* {data.labels.map(label => <Label key={label} color={label} />)} */}
+        <button type="button">
+          <MdDelete size={14} color="#7159c1" />
+        </button>
       </header>
       <p>{data.content}</p>
       <div>
