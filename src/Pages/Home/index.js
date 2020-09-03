@@ -9,6 +9,7 @@ export default function Home() {
   const [email,setEmail] = useState('');
   const [password,setPassword] = useState('');
   let history = useHistory();
+
   useEffect(()=>{
     function verifyLogin() {
       let token = localStorage.getItem('@token');
@@ -19,7 +20,8 @@ export default function Home() {
     }
 
     verifyLogin();
-  },[])
+  },[]);
+
   async function handleClick() {
     const login = await auth(email,password);
     if(login) {

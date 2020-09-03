@@ -3,6 +3,8 @@ import { Route,BrowserRouter } from 'react-router-dom';
 import Kamban from './Pages/Kamban';
 import Home from './Pages/Home';
 import Register from './Pages/Register';
+import RegisterStep from './Pages/RegisterStep';
+import RegisterTask from './Pages/RegisterTask';
 function Routes() {
   return(
     <BrowserRouter>
@@ -20,7 +22,14 @@ function Routes() {
         component={Register}
         path="/register-user"
       />
-
+      <Route
+        component={RegisterStep}
+        path="/register-step"
+      />
+      <Route
+        component={RegisterTask}
+        path="/register-task"
+      />
     </BrowserRouter>
   )
 }

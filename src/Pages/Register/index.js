@@ -11,8 +11,6 @@ export default function Register() {
           <Input name="Nome" label="Nome" type="text"/>
           <Input name="Email" label="Email" type="email"/>
           <Input name="Senha" label="Senha" type="password"/>
-
-
           <button type="button">
             Fazer Login
           </button>

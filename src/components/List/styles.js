@@ -39,5 +39,14 @@ export const Container = styled.div`
       background:transparent;
       cursor:pointer;
     }
+
   }
+`;
+
+export const taskButton= styled.button`
+  width:100%;
+  border:1px solid #7b18c1;
+  background:transparent;
+  cursor:pointer;
+
 `;
